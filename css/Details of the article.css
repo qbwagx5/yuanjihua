@@ -1,0 +1,287 @@
+
+		* {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		#box1 {
+			position: fixed;
+			background: #fafafa;
+			width: 100%;
+			height: 65px;
+			/* position: absolute; */
+			border: 1px solid;
+			box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1), 0 1px rgba(0, 0, 0, .1);
+			border-bottom-style: none;
+
+		}
+
+		#box1 img {
+			padding-left: 269px;
+			height: 60px;
+		}
+
+		#box1 p {
+			position: absolute;
+			bottom: 20px;
+			display: inline;
+			font-family: \\5FAE\8F6F\96C5\9ED1, v, Arail, Tabhoma;
+			font-size: 26px;
+			color: black;
+		}
+
+		.lianjie {
+			position: relative;
+			/* left: 40%;
+		margin-right: 30px; */
+			line-height: 60px;
+			text-decoration: none;
+			color: black;
+			font-size: 16px;
+			bottom: 25px;
+			border: 3px;
+		}
+
+		#box1 li {
+			position: relative;
+			list-style: none;
+			display: inline-block;
+			left: 25%;
+			margin-right: 30px;
+			/* border-bottom:3px solid; */
+			height: 40px;
+		}
+
+		#box1 li {
+			border-style: none;
+		}
+
+		#box1 li:hover {
+			border-bottom-style: solid;
+			border-bottom-color: red;
+		}
+
+		.view {
+			width: 1100px;
+			margin: 0 auto;
+		}
+
+		.markdown-body {
+			top: 50px;
+			position: relative;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+			color: #24292e;
+			font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			word-wrap: break-word;
+		}
+
+		.markdown-body:after,
+		.markdown-body:before {
+			display: table;
+			content: "";
+		}
+
+		body>:first-child {
+			margin-top: 0 !important;
+		}
+
+		.post-header {
+			margin-bottom: 40px;
+		}
+
+		.markdown-body * {
+			box-sizing: border-box;
+		}
+
+		.post-title {
+			font-size: 28px;
+			text-align: center;
+			font-weight: 400;
+			margin: 30px 0 10px;
+		}
+
+		.post-meta {
+			text-align: center;
+			color: #999;
+			font-size: 14px;
+		}
+
+		.author {
+			display: inline-block;
+			position: relative;
+			top: 10px;
+		}
+
+		.author img {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			border: 1px solid #ddd;
+		}
+
+		.a_about {
+			margin-top: 10px;
+		}
+
+		.post-time {
+			margin: 0 3px;
+		}
+
+		.markdown-body:after {
+			clear: both;
+		}
+
+		.markdown-body:after,
+		.markdown-body:before {
+			display: table;
+			content: "";
+		}
+
+		.otherHadel,
+		.someHandel {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+		.someHandel {
+			margin: auto;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			border-top: 1px solid #ccc;
+			padding: 20px 0;
+		}
+
+		.otherHadel {
+			width: 180px;
+			height: 50px;
+			border: 1px solid #dc2929;
+			-ms-flex-pack: distribute;
+			justify-content: space-around;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			border-radius: 20px;
+			padding: 0 10px;
+		}
+
+
+		.otherHadel,
+		.someHandel {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+		.otherHadel span:first-of-type {
+			border-right: 1px solid #dc2929;
+		}
+
+		.otherHadel span {
+			height: 30px;
+			display: inline-block;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			line-height: 30px;
+			-webkit-box-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+			color: #dc2929;
+			cursor: pointer;
+		}
+
+		.otherHadel span>img {
+			width: 25px;
+			height: 25px;
+			opacity: .8;
+		}
+
+		.otherHadel span {
+			height: 30px;
+			display: inline-block;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			line-height: 30px;
+			-webkit-box-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+			color: #dc2929;
+			cursor: pointer;
+		}
+
+		.shareArticle {
+			position: relative;
+			cursor: default;
+		}
+
+		.shareArticle>i {
+			color: green;
+		}
+
+		.icon-weixin:before {
+			content: "\E7A7";
+		}
+
+		.textarea,
+		.textarea_two {
+			border: 1px solid #ccc;
+			width: 100%;
+			border-radius: 6px;
+			margin-top: 15px;
+			padding: 5px;
+			font-size: 14px;
+			-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		.textarea {
+			height: 90px;
+		}
+
+		textarea {
+			resize: none;
+		}
+
+		input,
+		select,
+		textarea {
+			outline: 0;
+			border: 0;
+		}
+
+		a:-webkit-any-link {
+			color: -webkit-link;
+			cursor: pointer;
+			text-decoration: underline;
+		}
+
+		.comment-btn {
+			-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+			box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+			color: #fff;
+			background: #dc2929;
+			border-radius: 4px;
+			font-size: 14px;
+			padding: 6px 12px;
+			margin-top: 10px;
+			display: inline-block;
+			float: right;
+		}

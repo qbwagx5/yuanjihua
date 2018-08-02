@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/person.css">
+    <style>
+      
+    </style>
+</head>
+
+<body>
+    <div id="box1">
+        <img src="../img/title.png" alt="">
+        <strong>
+            <p id="logotext">猿计划</p>
+        </strong>
+        <li>
+            <a href="" class="lianjie">未读消息</a>
+        </li>
+        <li>
+            <a href="" class="lianjie">首页</a>
+        </li>
+        <li>
+            <a href="" class="lianjie">知识体系</a>
+        </li>
+        <li>
+            <a href="" class="lianjie">活动中心</a>
+        </li>
+        <li>
+            <a href="../html/topicList.html" class="lianjie" id="article">文章</a>
+        </li>
+        <li>
+            <a href="../html/article.html" class="lianjie" id="article">写文章</a>
+        </li>
+        <!-- <li><a href="" class="lianjie">登录</a></li>
+		<li><a href="" class="lianjie">注册</a></li> -->
+        <li>
+            <a href="" class="lianjie">
+                <img src="" alt="">
+            </a>
+        </li>
+    </div>
+    <div id="userList" class="user-info">
+        <div class="user-tab-list">
+            <nav>
+                <a href="#/" class="sidea">我的信息</a>
+                <a href="#/resetpwd" class="sidea">修改密码</a>
+                <a href="#/mynote" class="sidea" id="mynotea">我的帖子</a>
+                <a href="#/mycollection" class="sidea">我的收藏</a>
+                <a href="#/myInfo" class="sidea">我的消息</a>
+                <a href="#/mytask" class="sidea">我的任务</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <div id="personal">
+        <section class="user-page">
+            <div class="list-item">
+                <div class="person_info">
+                    <p class="usercenter-title2">个人信息</p>
+                    <div class="phpto item">
+                        <img src="" class="photo-img" id="userImg">
+                        <div class="reset-photo cursor">
+                            <span style="margin-left: 50px">更换头像</span>
+                            <input accept="image/jpg,image/jpeg,image/png" class="load-img" type="file">
+                        </div>
+                    </div>
+                    <div class="phone item">
+                        <label>注册手机号</label>
+                        <span>13011072992</span>
+                    </div>
+                    <div class="name item">
+                        <label>昵称</label>
+                        <div class="el-input" style="width: 200px;">
+                            <!---->
+                            <!---->
+                            <input autocomplete="off" rows="2" validateevent="true" class="el-input__inner" type="text">
+                            <!---->
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="sex item">
+                        <label>性别</label>
+                        <div class="field">
+                            <span>男</span>
+                            <input value="1" class="checkbtn" type="checkbox">
+                            <span>女</span>
+                            <input value="2" class="checkbtn" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="submit-userInfo">提交</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="resetpwd">
+        <div class="list-item2">
+            <div data-v-4267cab6="" class="reset-pwd">
+                <p data-v-4267cab6="" class="usercenter-title">修改密码</p>
+                <hr>
+                <div data-v-4267cab6="" class="phone item">
+                    <label data-v-4267cab6="">手机号 : </label>
+                    <span id="user-mobile"></span>
+                </div>
+                <div class="new-pwd item">
+                    <label >新密码 : </label>
+                    <div  class="el-input">
+                        <input type="password"  placeholder="请输入新密码" class="el-input__inner" id="newpwd">
+                        <!-- <input autocomplete="  off" placeholder="请输入新密码" type="password" rows="2" validateevent="true" class="el-input__inner" id="newpwd"> -->
+                    </div>
+                </div>
+                <div data-v-4267cab6="" class="confirm-pwd item">
+                    <label data-v-4267cab6="">确认密码 : </label>
+                    <div data-v-4267cab6="" class="el-input">
+                        <!---->
+                        <!---->
+                        <input type="password"  placeholder="请输入新密码" class="el-input__inner" id="againpwd">
+                        <!-- <input autocomplete="off" placeholder="请再次输入密码" type="password" rows="2" validateevent="true" class="el-input__inner" id="confirm" id="againpwd"> -->
+                        <!---->
+                        <!---->
+                    </div>
+                </div>
+                <div data-v-4267cab6="" class="message-code item">
+                    <label data-v-4267cab6="">验证码 : </label>
+                    <div data-v-4267cab6="" class="message-code-number el-input">
+                        <!---->
+                        <!---->
+                        <input autocomplete="off" placeholder="请输入验证码" type="text" rows="2" validateevent="true" class="el-input__inner">
+                        <!---->
+                        <!---->
+                    </div>
+                    <span data-v-4267cab6="" class="get-code">获取验证码</span>
+
+                    <!---->
+                </div>
+                <div data-v-4267cab6="" class="submit-userInfo  cursor" id="update-btn">提交</div>
+            </div>
+        </div>
+    </div>
+    <div id="mynote">
+        <div class="usercenter-title my-note">
+            <p id="myq">主题</p>
+            <ul class="title-list">
+                <li class="titleli">分类</li>
+                <li class="titleli">回复</li>
+                <li class="titleli">浏览</li>
+                <li class="titleli">发布时间</li>
+                <li class="titleli">操作</li>
+            </ul>
+        </div>
+        <hr>
+        <div id="linehtml">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+<script src="../js/person.js">
+    //从ajax获取data参数并转化成字符串
+
+   
+</script>

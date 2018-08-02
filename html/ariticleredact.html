@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>article</title>
+    <link rel="stylesheet" type="text/css" href="../css/htools.select.skin.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="../css/editormd.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/ariticleredact.css">
+
+
+   
+</head>
+
+<body>
+
+    <div id="box1">
+        <img src="../img/title.png" alt="" id="img1">
+        <strong>
+            <p id="title1">猿计划</p>
+        </strong>
+        <li class="titleli">
+            <a href="" class="lianjie">未读消息</a>
+        </li>
+        <li class="titleli">
+            <a href="../首页.html" class="lianjie">首页</a>
+        </li>
+        <li class="titleli">
+            <a href="" class="lianjie">知识体系</a>
+        </li>
+        <li class="titleli">
+            <a href="" class="lianjie">活动中心</a>
+        </li>
+        <li class="titleli">
+            <a href="" class="lianjie">文章</a>
+        </li>
+        <li class="titleli">
+            <a href="" class="lianjie">写文章</a>
+        </li>
+        <!-- <li class="titleli">
+            <a href="../login.html" class="lianjie">登录</a>
+        </li>
+        <li class="titleli">
+            <a href="../zhece.html" class="lianjie">注册</a>
+        </li> -->
+        <div>
+            <div class="writeTop" style="overflow: hidden; margin-top:30px;">
+                <div style="width: 50%; float: left;">
+                    <div style="float: left; font-size: 14px; margin-right: 10px; line-height: 36px; margin-left:269px ">文章标题</div>
+                    <div class="edit_title el-input">
+                        <input autocomplete="off" placeholder="输入文章标题" type="text" rows="2" validateevent="true" class="el-input__inner" id="title">
+                    </div>
+                </div>
+                <div style="width: 25%; float: left;">
+                    <div style="float: left; font-size: 14px; margin-right: 10px; line-height: 36px;">
+                        所属分类
+                    </div>
+                    <div class="el-select edit_type">
+                        <div class="el-input">
+                            <select id="myselect">
+                                <option value="0">请选择</option>
+                                <option value="1">经验分享</option>
+                                <option value="3">成果分享</option>
+                                <option value="2">入门学习</option>
+                            </select>
+                            <!-- <i class="el-input__icon el-icon-caret-top"></i> 
+                     <input autocomplete="off" placeholder="请选择" readonly="readonly" icon="caret-top" type="text" rows="2" class="el-input__inner">  -->
+
+                        </div>
+                        <div class="resize-triggers">
+                            <div class="expand-trigger">
+                                <div style="width: 201px; height: 100px;"></div>
+                            </div>
+                            <div class="contract-trigger"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 25%; float: left;">
+                    <div style="float: left; font-size: 14px; margin-right: 10px; line-height: 36px;">技术分类</div>
+                    <div class="el-select edit_type">
+                        <div class="el-input">
+                            <label>
+                                <select id="myselect1">
+                                    <option value="0">请选择</option>
+                                    <option value="1">html</option>
+                                    <option value="2">php</option>
+                                    <option value="3">java</option>
+                                </select>
+                                <!-- <i class="el-input__icon el-icon-caret-top is-reverse"></i>
+                        <input autocomplete="off" placeholder="请选择" readonly="readonly" icon="img/caret-top.png" type="text" rows="2" class="el-input__inner">     -->
+                        </div>
+                        <div class="resize-triggers">
+                            <div class="expand-trigger">
+                                <div style="width: 201px; height: 150px;"></div>
+                            </div>
+                            <div class="contract-trigger"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="editormd" id="test-editormd">
+                <textarea class="editormd-markdown-textarea" name="test-editormd-markdown-doc" id="edithtml"></textarea> 第二个隐藏文本域，用来构造生成的HTML代码，方便表单POST提交，这里的name可以任意取，后台接受时以这个name键为准
+                <textarea class="editormd-html-textarea" name="text" id="editmd"></textarea>
+            </div>
+        </div>
+        <div id="logo-btn">
+            发布
+        </div>
+
+
+</body>
+
+</html>
+<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/editormd.min.js"></script>
+<script src="../js/jquery.htools.select.js"></script>
+<script src="../js/ariticleredact.js"></script>

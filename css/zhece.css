@@ -1,0 +1,144 @@
+
+		/* 	*{
+	padding:0px;
+	margin:0px; 
+		} */
+
+		#box1 {
+			position: fixed;
+			background: #fafafa;
+			width: 100%;
+			height: 65px;
+			position: absolute;
+			border: 1px solid box-shadow:0 2px 10px 0 rgba(0, 0, 0, .1), 0 1px rgba(0, 0, 0, .1);
+			border-bottom-style: none;
+
+		}
+
+		#box1 img {
+			position: relative;
+			padding-left: 269px;
+			height: 60px;
+
+		}
+
+		#title1 {
+			position: absolute;
+			margin-bottom: 10px;
+			display: inline;
+			font-family: \\5FAE\8F6F\96C5\9ED1, v, Arail, Tabhoma;
+			font-size: 26px;
+			color: black;
+			bottom: 7px;
+		}
+
+		.lianjie {
+			position: relative;
+			/* left: 40%;
+		margin-right: 30px; */
+			line-height: 60px;
+			text-decoration: none;
+			color: black;
+			font-size: 16px;
+			bottom: 25px;
+			border: 3px;
+		}
+
+		#box1 li {
+			position: relative;
+			list-style: none;
+			display: inline-block;
+			left: 25%;
+			margin-right: 30px;
+			/* border-bottom:3px solid; */
+			height: 40px;
+		}
+
+		#box1 li {
+			border-style: none;
+		}
+
+		#box1 li:hover {
+			border-bottom-style: solid;
+			border-bottom-color: red;
+		}
+
+		#box2 {
+			position: absolute;
+			width: 381px;
+			height: 393px;
+			border: 1px #845913 solid;
+			/* border-radius: 10px; */
+			top: 118px;
+			left: 547px;
+			margin: 10px solid;
+			overflow: hidden
+		}
+
+		#title2 {
+			position: absolute;
+			width: 300px;
+			height: 36px;
+			padding-left: 130px;
+			margin-bottom: 2px;
+		}
+
+		#hr1 {
+			position: absolute;
+			top: 40px;
+			width: 300px;
+			margin-left: 30px;
+
+			margin-top: 0px;
+		}
+
+		#mobile {
+
+
+			margin-top: 70px;
+		}
+
+		.textbox {
+
+			width: 300px;
+			height: 30px;
+			margin-top: 30px;
+			margin-left: 30px;
+			padding: 0px;
+		}
+
+		#textbox2 {
+
+			width: 180px;
+			height: 30px;
+			margin-top: 20px;
+			margin-left: 30px;
+			padding: 0px;
+
+		}
+
+		#yanzheng {
+
+			width: 25%;
+			margin-right: 45px;
+			background: #46b036;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			color: #fff;
+			float: right;
+			margin-top: 20px;
+			cursor: pointer;
+			border-radius: 6px;
+		}
+
+		#btn {
+			position: absolute;
+			left: 95px;
+			margin-top: 25px;
+			width: 189px;
+			height: 35px;
+			background: #ea0f2d;
+			border-radius: 18px;
+			color: white;
+		}
