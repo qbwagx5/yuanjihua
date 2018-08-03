@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+function ajax( method, url,params){
+    method = method.toUpperCase()
+    var xhr=new XMLHttpRequest()
+    if(typeof params=== 'object'){
+        var tempar=[]
+        for (var key in params){
+            var value = params[key]
+            tempar.push(key + '=' +value )
+        }
+        params= tempar.join('&')
+
+    }
+
+    //如果想给method 是GET的请求方式传递参数,url + '?' +params
+    if ( method=== 'GET'){
+        url += '?' +params
+    } 
+    xhr.open(method, url)
+    //定义data 如果不传参 params 就是空
+    var data=null
+    //如果是post请求方式，需要改变一下请求头，并把params赋值给data作为参数
+    if (method ==='POST' ){
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
+        data= params
+    }
+    xhr.send(data)
+    
+    xhr.onreadystatechange=function(){
+        if (this.readyState !== 4) return
+            console.log(this.responseText)
+          }
+    }
+    ajax('POST','add.php','key1=value1&key2=value2')
+
+</script>

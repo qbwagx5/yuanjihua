@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #head{
+            width: 100%;
+            height: 65px;
+            border: 1px solid red;
+        }
+        #side{
+            position: relative;
+            top: 65px;
+            left: 71px;
+            width: 160px;
+            height: 354px;
+            border: 1px solid red;
+        }
+        #title{
+            position: absolute;
+            /* left: 271px;
+            top: 65px; */
+            display: flex;
+            width: 100%;
+            /* justify-content: space-between; */
+        }
+        #title .left{
+            flex: 4;
+        }
+        #title .right{
+            flex: 6;  
+        }
+        #title> .right >.header{
+            position: relative;
+            top: -305px;
+            left: -205px;
+            display: flex;
+          
+         
+        }
+        #title> .right >.header>.one{
+            flex: 9;
+            
+        }
+        #title> .right >.header>.two>span{
+            margin-right:20px; 
+            flex: 1;          
+        }
+
+    
+    
+    </style>
+</head>
+<style>
+
+    </style>
+
+<body>
+    <div id="head"></div>
+    <div id="side"></div>
+    <div id="title">
+        <div class="left"></div>
+
+       <div class="right">
+        <div class="header">
+            <div class="one">
+            <span class="">主题</span>
+            </div>
+            <div class="two">
+            <span>分类</span>
+            <span>回复</span>
+            <span>浏览</span>
+            <span>发布时间</span>
+            <span>操作</span>
+           
+            </div>
+            
+        </div>
+       
+
+
+
+       </div>
+       <hr>
+    </div>
+    <!-- <div id="demo"></div> -->
+    
+        <!-- <p class="article-title">{{}}</p>
+        <ul class="article-property title-list">
+            <li>成果分享</li>
+            <li>0</li>
+            <li>2</li>
+            <li>2018-07-02 19:00:42</li>
+            <li>
+                <img src=""alt="" class="edit"> &nbsp;
+                <span></span>
+                &nbsp;
+                <img src="" lt="">
+            </li>
+        </ul> -->
+  
+
+
+
+
+
+
+
+ <!-- each 内部 $value 拿到的是当前被遍历的那个元素 -->
+  <!-- {{each comments}}
+           
+            <tr>
+                    <td>{{$value.title}}</td>
+                    <td>{{$value.modify_time}}</td>
+                    <td>{{$value.topic_id}}</td>
+                  </tr>
+                  {{/each}}  -->
+ 
+    <!-- <table id="demo"></table>  -->
+    <script id="tmpl" type="text/x-art-template">
+           
+        {{each comments}}
+        <div class="article-content-wrap my-note" >
+             <p class="article-title">{{$value.title}}</p>
+                <ul class="article-property title-list">
+                    <li>成果分享</li>
+                    <li>{{$value.comment_num}}</li>
+                    <li>{{$value.browser_num}}</li>
+                    <li>2018-07-02 19:00:42</li>
+                    <li>
+                        <img src=""alt="" class="edit"> &nbsp;
+                        <span></span>
+                        &nbsp;
+                        <img src="" lt="">
+                    </li>
+                </ul> 
+            </div>
+                {{/each}}  -->  
+          </script>
+
+
+    <script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+    <script src="../js/template-web.js"></script>
+    <script>
+
+        window.onload = function () {
+            $.ajax({
+                url: "http://www.ftusix.com/static/data/myNote.php",
+                type: "get",
+                async: true,
+                // dataType:'json',
+                data: ({
+                    user_id: 183,
+                    page: "1"
+                }),
+                success: function (res) {
+                    var data = res.data;
+                    console.log(data);
+                    var context = { comments: data }
+                    var html = template('tmpl', context);
+                    //    console.log(html);
+                    document.getElementById('demo').innerHTML = html
+
+
+                }
+            })
+        }
+
+
+
+    </script>
+</body>
+
+</html>

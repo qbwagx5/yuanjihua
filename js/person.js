@@ -49,7 +49,6 @@ router.route('/', function () {
     $("#submit-userInfo").click(function () {
 
 
-
     })
 
 });
@@ -80,26 +79,16 @@ router.route('/resetpwd', function () {
         }),
         success: function (data2) {
             console.log(data2)
-            // alert("修改成功")
-    
+            // alert("修改成功")  
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             console.log(XMLHttpRequest, textStatus, errorThrown);
         },
-    });
-
-            
+    });           
         } else {
             alert("两次提交密码不一致")
             return
         }
-       
-
-        
-
-
-
-
     })
 
 
